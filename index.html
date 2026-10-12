@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#102238"><meta name="description" content="TaxiDispo Fahrer-App">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css"><title>TaxiDispo Fahrer</title>
+</head>
+<body>
+<header><div class="brand">🚕 <span>TaxiDispo</span></div><span id="connection" class="pill">Demo-Modus</span></header>
+<main>
+<section class="welcome"><div><p class="eyebrow">FAHRERBEREICH</p><h1 id="greeting">Dein Fahrplan</h1><p id="today"></p></div><button id="refresh" class="icon-button" aria-label="Aktualisieren">↻</button></section>
+<section class="notice" id="notice">Demo-Daten. Nach der Einrichtung werden Fahrten aus Google Sheets geladen.</section>
+<section class="toolbar"><label for="driver">Fahrer</label><input id="driver" value="Kevin" autocomplete="name"><button id="saveDriver">Übernehmen</button></section>
+<div class="section-head"><h2>Deine Fahrten</h2><span id="count" class="count">0 Fahrten</span></div>
+<div id="trips" class="trips"></div>
+<section class="contact">
+<div><p class="eyebrow">DISPOSITION</p><h2>Kontakt</h2><p>Direkt mit der Disposition sprechen.</p></div>
+<div class="contact-actions"><a id="callLink" class="primary" href="tel:">Anrufen</a><button id="discordBtn" class="secondary">Sprachkanal öffnen</button></div>
+<p class="small">Telefonnummer und Sprachkanal werden in config.js eingerichtet.</p>
+</section>
+<footer>TaxiDispo · sparsam mit mobilen Daten</footer>
+</main>
+<script src="config.js"></script><script src="app.js"></script>
+</body></html>
